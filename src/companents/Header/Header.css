@@ -1,0 +1,169 @@
+.nav-img {
+  margin-top: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-2 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.link_active {
+  font-weight: bold;
+  filter: invert(44%) sepia(97%) saturate(1660%) hue-rotate(180deg)
+    brightness(104%) contrast(90%);
+}
+
+.list {
+  margin-top: 50px;
+}
+
+.name-nav {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+}
+
+.nav-link-3 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.www {
+  width: 100px;
+}
+
+.nav-btn {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 190px;
+  height: 47px;
+  border: none;
+  background: #1d9bf0;
+  border-radius: 27.5px;
+  margin-top: 20px;
+}
+
+.navbar__link-btn {
+  max-width: 200px;
+  border: 2px solid rgba(29, 155, 240, 1);
+  background: none;
+  cursor: pointer;
+  font-family: "montserrat", sans-serif;
+  transition: color 0.4s linear;
+  padding: 9px 60px;
+  border-radius: 25px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(29, 155, 240, 1);
+}
+
+.navbar__link-btn:hover {
+  color: #fff;
+}
+
+.navbar__link-btn::before {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  border-radius: 25px;
+  width: 164px;
+  height: 38px;
+  content: "";
+  background-color: rgba(29, 155, 240, 1);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn-1::before {
+  transform: scaleY(0);
+}
+
+.btn-1:hover::before {
+  transform: scaleY(1);
+}
+
+.wrapper .button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  margin-top: 10px;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background-color: rgb(216, 241, 255);
+}
+
+.wrapper .button .icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 2px;
+  padding-top: 10px;
+}
+
+.wrapper .button .icon .logo {
+  margin-left: 10px;
+  margin-bottom: 27px;
+}
+
+.wrapper .button span {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 15px;
+  margin-top: -10px;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper .button:hover {
+  width: 155px;
+}
+
+/* .link_active {
+  font-weight: bold;
+} */
+.wew {
+  width: 50px;
+  height: 50px;
+}
