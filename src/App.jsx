@@ -6,6 +6,9 @@ import List from "./companents/List/List";
 import Explore from "./companents/Explore/Explore";
 import Notification from "./companents/Notification/Notification";
 import Messages from "./companents/Messages/Messages";
+import Bookmarks from "./companents/Bookmarks/Bookmarks";
+import Lists from "./companents/Lists/Lists";
+import More from "./companents/More/More";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
             <Route path="/explore" element={<Explore />} />
             <Route path="/notification" element={<Notification />} />
             <Route path="/messages" element={<Messages />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
+            <Route path="/lists" element={<Lists />} />
+            <Route path="/more" element={<More />} />
           </Routes>
         </div>
 

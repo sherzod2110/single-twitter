@@ -1,12 +1,12 @@
 import star from "../../assets/Group.svg";
 
-const Messages = () => {
+const More = () => {
   return (
     <>
       <div style={{ width: "849px" }}>
         <div>
           <div className="d-flex justify-content-between p-3 border-bottom border-2">
-            <p className="home">Messages</p>
+            <p className="home">More</p>
             <img src={star} alt="" />
           </div>
 
@@ -22,4 +22,4 @@ const Messages = () => {
   );
 };
 
-export default Messages;
+export default More;

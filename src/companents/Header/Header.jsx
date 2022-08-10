@@ -88,18 +88,32 @@ const Header = () => {
                 Messages
               </li>
             </NavLink>
-            <li className="d-flex align-items-center gap-2 nav-link">
-              <img src={bookmarks} alt="" />
-              <a className="text-decoration-none nav-link-2" href="">
+            <NavLink
+              to="/bookmarks"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-decoration-none nav-link-2 link_active"
+                  : "text-decoration-none nav-link-2"
+              }
+            >
+              <li className="d-flex align-items-center gap-2 nav-link">
+                <img src={bookmarks} alt="" />
                 Bookmarks
-              </a>
-            </li>
-            <li className="d-flex align-items-center gap-2 nav-link">
-              <img src={lists} alt="" />
-              <a className="text-decoration-none nav-link-2" href="">
+              </li>
+            </NavLink>
+            <NavLink
+              to="/lists"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-decoration-none nav-link-2 link_active"
+                  : "text-decoration-none nav-link-2"
+              }
+            >
+              <li className="d-flex align-items-center gap-2 nav-link">
+                <img src={lists} alt="" />
                 Lists
-              </a>
-            </li>
+              </li>
+            </NavLink>
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -113,12 +127,19 @@ const Header = () => {
                 Profile
               </li>
             </NavLink>
-            <li className="d-flex align-items-center gap-2 nav-link">
-              <img src={more} alt="" />
-              <a className="text-decoration-none nav-link-2" href="">
+            <NavLink
+              to="/more"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-decoration-none nav-link-2 link_active"
+                  : "text-decoration-none nav-link-2"
+              }
+            >
+              <li className="d-flex align-items-center gap-2 nav-link">
+                <img src={more} alt="" />
                 More
-              </a>
-            </li>
+              </li>
+            </NavLink>
 
             <button class="navbar__link-btn btn-1">Tweet</button>
           </ul>
