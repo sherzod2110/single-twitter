@@ -1,6 +1,5 @@
 import "../Main/Main.css";
 import { useState } from "react";
-
 import label from "../../assets/Arrow.svg";
 import Rectangle from "../../assets/Rectangle.png";
 import bobur from "../../assets/bobur.png";
@@ -16,6 +15,7 @@ import like from "../../assets/likefill.svg";
 import Frame21 from "../../assets/Frame21.svg";
 import statistics from "../../assets/statistics.svg";
 import image8 from "../../assets/image8.png";
+import { NavLink } from "react-router-dom";
 
 const Main = () => {
   const [count, setCount] = useState(0);
@@ -24,11 +24,18 @@ const Main = () => {
     <>
       <div className="scrool">
         <div>
-          <div className="d-flex align-items-center gap-4 p-2 ps-4">
-            <img src={label} alt="" />
+          <div className="d-flex align-items-center justify-content-between gap-4 p-2 ps-4">
+            <div className="d-flex align-items-center gap-4">
+              <img src={label} alt="" />
+              <div>
+                <p className="main-text">Bobur</p>
+                <span className="main-spn">1,070 Tweets</span>
+              </div>
+            </div>
             <div>
-              <p className="main-text">Bobur</p>
-              <span className="main-spn">1,070 Tweets</span>
+              <NavLink to="/">
+                <button className="logut mt-2">Logout</button>
+              </NavLink>
             </div>
           </div>
         </div>

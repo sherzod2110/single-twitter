@@ -21,7 +21,7 @@ const Header = () => {
           <div className="wrapper">
             <div className="button">
               <div className="icon">
-                <NavLink to="/">
+                <NavLink to="/main">
                   <img
                     className="logo"
                     src={logo}
@@ -51,12 +51,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               to="/explore"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-decoration-none nav-link-2 link_active"
-                  : "text-decoration-none nav-link-2"
-              }
-            >
+              className={({ isActive }) => isActive ? "text-decoration-none nav-link-2 link_active" : "text-decoration-none nav-link-2"}>
               <li className="d-flex align-items-center gap-2 nav-link">
                 <img src={explore} alt="" />
                 Explore
@@ -115,7 +110,7 @@ const Header = () => {
               </li>
             </NavLink>
             <NavLink
-              to="/"
+              to="/main"
               className={({ isActive }) =>
                 isActive
                   ? "text-decoration-none nav-link-2 link_active"
@@ -142,6 +137,8 @@ const Header = () => {
             </NavLink>
 
             <button class="navbar__link-btn btn-1">Tweet</button>
+            <NavLink to="/"><button className="logut mt-2">Logout</button></NavLink>
+
           </ul>
 
           <div className="d-flex align-items-center gap-3 www position-absolute bottom-0 mb-4">

@@ -12,6 +12,7 @@ import statistics from "../../assets/statistics.svg";
 import Ellip from "../../assets/Ellip.svg";
 import eeee from "../../assets/eeee.svg";
 import meal from "../../assets/meal.png";
+import { NavLink } from "react-router-dom";
 
 const List = () => {
   const [count, setCount] = useState(0);
@@ -19,9 +20,14 @@ const List = () => {
     <>
       <div className="scrool" style={{ width: "849px" }}>
         <div>
-          <div className="d-flex justify-content-between p-3 border-bottom border-2">
+          <div className="d-flex justify-content-between p-3 align-items-center border-bottom border-2">
             <p className="home">Home</p>
-            <img src={star} alt="" />
+            <div>
+              <img className="me-3" src={star} alt="" />
+              <NavLink to="/">
+                <button className="logut mt-2">Logout</button>
+              </NavLink>
+            </div>
           </div>
 
           <div className="border-bottom border-2 p-3">
@@ -136,7 +142,7 @@ const List = () => {
                 <p className="text-text m-0">Кечиринглар</p>
               </div>
             </div>
-            <img  className="ms-5 ps-4 mt-2" src={meal} alt="" />
+            <img className="ms-5 ps-4 mt-2" src={meal} alt="" />
             <ul className="list-unstyled d-flex justify-content-between mx-auto ps-2 mb-0 qwerty">
               <li className="d-flex align-items-center gap-1">
                 <img src={comment} alt="" />
